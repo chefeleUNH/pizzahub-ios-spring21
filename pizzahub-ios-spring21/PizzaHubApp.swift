@@ -8,7 +8,9 @@
 import SwiftUI
 
 @main
-struct pizzahub_ios_spring21App: App {
+struct PizzaHubApp: App {
+    @UIApplicationDelegateAdaptor(AppDelegate.self) var appDelegate
+
     var body: some Scene {
         WindowGroup {
             ContentView()
