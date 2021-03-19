@@ -13,7 +13,7 @@ struct PizzaHubApp: App {
 
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            PizzeriaListView()
         }
     }
 }
