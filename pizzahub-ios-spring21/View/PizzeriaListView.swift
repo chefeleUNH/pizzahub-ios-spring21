@@ -23,11 +23,12 @@ struct PizzeriaListView: View {
         NavigationView {
             List {
                 ForEach(pizzerias.items) { pizzeria in
-//                    NavigationLink(destination: PizzeriaDetailView(pizzeria: pizzeria)) {
+                    NavigationLink(destination: PizzeriaDetailView(pizzeria: pizzeria)) {
                         PizzeriaRow(pizzeria: pizzeria)
-//                    }
+                    }
                 }
             }
+            .navigationBarTitle("Pizzerias")
         }
     }
 }
