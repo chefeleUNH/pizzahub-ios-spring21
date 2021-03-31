@@ -7,4 +7,6 @@ target 'pizzahub-ios-spring21' do
 
   # Pods for pizzahub-ios-spring21
   pod 'Firebase/Firestore'
+  pod 'Firebase/Storage'
+  pod 'SDWebImageSwiftUI'
 end

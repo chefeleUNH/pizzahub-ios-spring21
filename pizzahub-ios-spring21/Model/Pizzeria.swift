@@ -8,11 +8,12 @@
 import Foundation
 
 class Pizzeria: FirebaseCodable {
+    
     var id: String
-    var name: String
-    var city: String
-    var state: String
-    var logo: String
+    @Published var name: String
+    @Published var city: String
+    @Published var state: String
+    @Published var logo: String
     
     required init?(id: String, data: [String: Any]) {
         guard let name = data["name"] as? String,
