@@ -35,13 +35,13 @@ struct PizzeriaDetailView: View {
                 .cornerRadius(38)
             Text("Menu")
                 .font(.largeTitle)
-//            List {
-//                ForEach(menu.items) { menuItem in
-//                    NavigationLink(destination: MenuItemDetailView(menuItem: menuItem, pizzeria: self.pizzeria)) {
-//                        MenuItemRow(menuItem: menuItem)
-//                    }
-//                }
-//            }
+            List {
+                ForEach(menu.items) { menuItem in
+                    NavigationLink(destination: MenuItemDetailView(menuItem: menuItem, pizzeria: self.pizzeria)) {
+                        MenuItemRow(menuItem: menuItem)
+                    }
+                }
+            }
         }
         .onAppear(perform: loadImageFromFirebase)
         .padding()
