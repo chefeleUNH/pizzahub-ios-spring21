@@ -7,7 +7,11 @@
 
 import FirebaseFirestore
 
-class MenuItem: FirebaseCodable {
+class MenuItem: FirebaseCodable, Equatable {
+    static func == (lhs: MenuItem, rhs: MenuItem) -> Bool {
+        return lhs.id == rhs.id
+    }
+    
     
     var id: String
     @Published var name: String
