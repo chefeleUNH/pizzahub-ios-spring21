@@ -13,7 +13,8 @@ struct PizzaHubApp: App {
 
     var body: some Scene {
         WindowGroup {
-            PizzeriaListView()
+            AppTabView()
+                .environmentObject(AppState())
                 .environmentObject(ShoppingCart())
         }
     }
